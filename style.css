@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("./img/homepage_hero_bg2.webp") no-repeat center top;
+  background-size: cover;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+header .h-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Đảm bảo hình ảnh luôn cố định */
+.phone-img {
+  max-width: 48%; /* Giảm kích thước tối đa của hình ảnh */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+  margin: 0 auto; /* Căn giữa hình ảnh */
+ 
+  display: block;
+}
+
+.btn-dark {
+  padding: 10px 30px; /* Giảm kích thước nút */
+  font-size: 1rem;
+}
+
+/* Offcanvas tùy chỉnh */
+.offcanvas {
+  background: #f7f3f0;
+  transition: transform 0.3s ease;
+}
+
+.offcanvas .offcanvas-body {
+  padding: 20px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* Hiệu ứng khi hover vào nút */
+.custom-button:hover,
+.btn-dark:hover,
+.btn-outline-light:hover {
+  transform: scale(1.1);
+}
+
+.custom-button,
+.btn-outline-light,
+.btn-dark {
+  border-radius: 30px;
+  padding: 5px 40px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Tối ưu cho màn hình nhỏ */
+@media (min-width: 770px) and (max-width: 1000px) {
+  .phone-img {
+    max-width: 70%;
+    /* Hình ảnh chiếm ít không gian hơn trên màn hình nhỏ */
+  }
+
+  header h1 {
+    font-size: 2rem; /* Giảm thêm tiêu đề cho màn hình nhỏ */
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .btn-dark {
+    width: 80%; /* Đảm bảo nút dễ bấm trên màn hình nhỏ */
+    margin: 10px auto;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 769px) {
+  .phone-img{
+    max-width: 45%;
+    margin-bottom: 10%;
+  }
+}
+
+/* icon các nước */
+main {
+  /* background: url('./img/website_Homepage.webp') no-repeat center center;  */
+  background-size: cover; /* Đảm bảo hình ảnh che phủ toàn bộ */
+  padding: 50px 0; /* Thêm khoảng cách để nội dung không bị sát hình nền */
+  max-height: 100%;
+}
+
+.flag-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+}
+
+.language-item {
+  text-align: center;
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .language-item {
+    transform: scale(0.8); /* Thu nhỏ cả phần tử */
+  }
+
+  .flag-icon {
+    width: 60px; /* Thu nhỏ kích thước hình ảnh */
+    height: 60px;
+  }
+
+  .language-text {
+    font-size: 0.8rem; /* Thu nhỏ kích thước chữ */
+  }
+}
+
+/* Ẩn danh sách dưới kích thước 770px */
+@media (min-width: 375px) and (max-width: 769px) {
+  .language-container {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+.p-text {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .intro-container .row {
+    flex-direction: column-reverse; /* Đảo thứ tự các cột */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  .intro-container .col-md-6 {
+    width: 100%; /* Mỗi cột chiếm 100% chiều rộng */
+  }
+
+  .intro-container .col-md-6 img {
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    max-width: 70%; /* Giới hạn kích thước hình ảnh */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị bóp méo */
+  }
+
+  .intro-container .col-md-6 .p-text {
+    font-size: 1rem; /* Giữ kích thước chữ phù hợp */
+    margin-bottom: 1.5rem; /* Thêm khoảng cách phía dưới */
+  }
+}
+
+.container-fluid {
+  position: relative;
+  overflow: hidden;
+}
+
+.container-fluid .overlay {
+  background: rgba(255, 255, 255, 0.8); /* Hiệu ứng phủ nền mờ */
+  border-radius: 15px;
+}
+
+button.btn-primary {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  background-color: #369670;
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #369670; /* Hiệu ứng hover */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.p-texts {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1.3rem;
+  word-wrap: break-word; /* Tự động xuống dòng từ quá dài */
+  overflow-wrap: break-word; /* Hỗ trợ tốt hơn trên trình duyệt hiện đại */
+  line-height: 1.8; /* Khoảng cách dòng dễ nhìn hơn */
+  text-align: justify; /* Canh lề để đoạn văn trông gọn gàng */
+}
+
+/* Định dạng cho container chính */
+.use1-container,
+.hz-container {
+  padding: 20px;
+}
+
+/* Căn giữa các phần tử bên trong hàng */
+.use1-container .row,
+.hz-container .row {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ không gian */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* Định dạng cho hình ảnh */
+.use1-container img,
+.hz-container img {
+  max-width: 90%; /* Giới hạn kích thước hình ảnh */
+  height: auto; /* Duy trì tỉ lệ hình ảnh */
+  margin-bottom: 1rem; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+/* Văn bản và tiêu đề */
+.use1-container h4,
+.hz-container h4 {
+  font-size: 1.5rem; /* Kích thước chữ cho tiêu đề */
+  margin-top: 1rem;
+}
+
+.use1-container p,
+.hz-container p {
+  font-size: 1.3rem; /* Kích thước chữ phù hợp */
+  line-height: 1.6; /* Khoảng cách dòng dễ đọc */
+  margin-bottom: 1.5rem;
+  word-wrap: break-word; /* Tự động xuống dòng từ quá dài */
+  overflow-wrap: break-word; /* Hỗ trợ tốt hơn trên trình duyệt hiện đại */
+}
+
+/* Media Query cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .use1-container .row,
+  .hz-container .row {
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+  }
+
+  .use1-container img,
+  .hz-container img {
+    max-width: 90%; /* Điều chỉnh kích thước hình ảnh nhỏ hơn */
+  }
+
+  .use1-container h4,
+  .hz-container h4 {
+    font-size: 1.3rem; /* Giảm kích thước tiêu đề */
+  }
+
+  .use1-container p,
+  .hz-container p {
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+  }
+}
+
+/* Thêm hình nền cho language-container */
+
+
+/* Thêm hình nền cho intro-container */
+.intro-container {
+  background-image: url('./img/what_is_tandem_bg_02_small.webp'); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Đảm bảo hình nền phủ đầy phần tử */
+  background-position: center; /* Căn giữa hình nền */
+  padding: 40px 0; /* Thêm khoảng cách giữa nội dung và biên */
+}
+
+.use1-container {
+  position: relative;
+  padding: 40px 0; /* Đảm bảo phần tử bên trong giữ nguyên */
+}
+
+.use1-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Chiếm toàn bộ chiều rộng section */
+  height: 100%; /* Chiếm toàn bộ chiều dài section */
+  background-image: url('./img/website_Homepage.webp');
+  background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+  background-repeat: no-repeat;
+  background-position: center; /* Căn chỉnh hình nền ở giữa */
+  z-index: -1; /* Đặt hình nền phía sau các thành phần */
+}
+
+
+.language-partners .d-flex {
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+}
+
+.language-partners img {
+  border: 2px solid #ddd; 
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: column; /* Xếp nội dung theo cột */
+  align-items: flex-end; /* Căn nội dung về phía bên phải */
+}
+
+.teach-text {
+  margin-top: 5px; /* Khoảng cách giữa hai dòng */
+}
+
+/* Mặc định, section sẽ có 2 cột */
+.section-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Trên iPad (kích thước màn hình từ 768px trở lên) */
+@media (max-width: 1024px) {
+  .section-container .col-md-6 {
+    width: 48%; 
+  }
+}
+
+/* Trên thiết bị dưới kích thước iPad (từ 375px - 768px) */
+@media (max-width: 767px) {
+  .section-container .row {
+    display: none; 
+  }
+}

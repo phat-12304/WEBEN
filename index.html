@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-primary text-light position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-4" href="#">LOGO</a>
+        <!-- Nút 3 gạch -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Khóa Học</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Giới THiệu Về AP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Tải Xuống</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ms-auto d-none d-lg-flex align-items-center">
+          <button class="btn btn-light me-2 custom-button">Đăng Nhập</button>
+          <button class="btn btn-outline-light">Đăng Ký</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="container position-relative h-100">
+      <div class="row align-items-center h-100 text-center text-md-start">
+
+        <div class="col-md-6 col-sm-12">
+          <h1 class="text-light fw-bold">Bạn Cần Học Từ Vựng?</h1>
+          <p class="text-light  h-text">Hãy cùng Hottio cãi thiện trình độ tiếng anh của bạn bằng
+            cách cãi thiện từ vựng mỗi ngày
+            nào.</p>
+          <button class="btn btn-dark">Học Thử Ngay</button>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img src="./img/hoppi.png" alt="App preview" class="phone-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container my-5 language-container">
+      <h2 class="text-center bold"><strong>Bạn Muốn Học Ngôn Ngữ...</strong></h2>
+      <div class="d-flex justify-content-center flex-wrap mt-5">
+        <div class="language-item text-center mx-3">
+          <img src="./img/en-uk.svg" alt="English" class="flag-icon">
+          <p class="language-text">English</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/jp.svg" alt="Japanese" class="flag-icon">
+          <p class="language-text">Japanese</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/fr.svg" alt="French" class="flag-icon">
+          <p class="language-text">French</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/de.svg" alt="German" class="flag-icon">
+          <p class="language-text">German</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/it.svg" alt="Italian" class="flag-icon">
+          <p class="language-text">Italian</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/pt-br.webp" alt="Portuguese" class="flag-icon">
+          <p class="language-text">Portuguese</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/zh.svg" alt="Chinese" class="flag-icon">
+          <p class="language-text">Chinese</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/ko.svg" alt="Korean" class="flag-icon">
+          <p class="language-text">Korean</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/vietnam.jpg" alt="Vietnam" class="flag-icon">
+          <p class="language-text">Việt Nam</p>
+        </div>
+        <div class="language-item text-center mx-4">
+          <img src="./img/other.svg" alt="Other" class="flag-icon">
+          <p class="language-text">Khác</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container my-5 intro-container">
+      <h2 class="text-center"><strong>Hottio Xin Chào Các Bạn</strong></h2>
+      <div class="row align-items-center gx-0">
+        <!-- Cột hình ảnh -->
+        <div class="col-md-6 text-center">
+          <img src="./img/intro1.png" alt="Hottio App" class="img-fluid">
+        </div>
+        <!-- Cột nội dung -->
+        <div class="col-md-6">
+          <p class="p-text" style="font-weight: 600;">Hottio là một ứng dụng cho phép học mọi ngôn ngữ trên thế giới
+            bằng việc học từ vựng bạn cũng có thể đặt lịch học trong ngày giúp bạn học một cách tiện lợi chủ động hơn
+            mọi lúc mọi nơi.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid text-center bg-light py-5"
+      style="background: url('./img/banner.webp') no-repeat center; background-size: cover;">
+      <div class="overplay d-flex flex-column justify-content-center align-items-center py-5">
+        <h2 class="display-4 fw-bold text-light">Cãi thiện cùng Hottio</h2>
+        <p class="fs-5 px-3 text-light mt-3" style="max-width: 700px;"> Hottio sẽ giúp bạn cãi thiện vốn từ vựng của bạn
+          một cách nhanh chóng với việc học giờ vàng và thêm từ vựng bạn muốn học một cách dễ dàng!</p>
+        <button class="btn btn-primary mt-3"><strong>Bắt Đầu Học</strong></button>
+      </div>
+
+    </div>
+
+
+    <section class="use1-container">
+      <section>
+        <div class="container my-5 ">
+          <h2 class="text-center"><strong>Hottio Có Thể Làm Gì?</strong></h2>
+          <div class="row">
+            <!-- Phần hình ảnh -->
+            <div class="col-md-6">
+              <img src="./img/use2.png" alt="Hottio App" class="img-fluid">
+            </div>
+            <!-- Phần nội dung -->
+            <div class="col-md-6">
+              <h4><strong>1. Thêm từ vựng</strong></h4>
+              <p>
+                Hottio có thể giúp bạn thêm từ vựng bạn biết để ghi nhớ một cách dễ dàng hơn, giúp bạn chủ động tìm kiếm
+                từ
+                vựng để học.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container my-5 hz-container">
+          <div class="row">
+            <!-- Phần nội dung -->
+            <div class="col-md-6">
+              <h4><strong>2. Chọn ngôn ngữ</strong></h4>
+              <p>
+                Hottio giúp bạn lựa chọn ngôn ngữ bạn muốn học để ghi nhớ và soạn những từ vựng cần thiết.
+              </p>
+            </div>
+            <!-- Phần hình ảnh -->
+            <div class="col-md-6">
+              <img src="./img/use1.png" alt="Hottio App" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="container my-5 ">
+
+          <div class="row">
+            <!-- Phần hình ảnh -->
+            <div class="col-md-6">
+              <img src="./img/use3.png" alt="Hottio App" class="img-fluid">
+            </div>
+            <!-- Phần nội dung -->
+            <div class="col-md-6">
+              <h4><strong>3. Học từ vựng</strong></h4>
+              <p>
+                Hottio có thể giúp bạn hoc và ghi nhớ từ vựng một cách dễ dàng, với giao diện thân thiện dễ dàng làm
+                quen
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="language-partners py-5 section-container">
+        <div class="container">
+          <h2 class="text-center mb-4 text-line"><strong>Millions of language partners. Any language combination.</strong></h2>
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="d-flex align-items-center shadow p-3 rounded">
+                <img src="img/Korean_Girl_Learning_English__1_.webp" class="rounded-circle" alt="Maia"
+                  style="width: 40%; height: 50%; object-fit: cover; margin-right: 15px;">
+                <div class="card-body p-0">
+
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Maia</h5>
+                    <span class="card-text mb-0" style="font-size: 15spanx;">Wants to learn <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""></span>
+                    <span class="card-text mb-0 teach-text" style="font-size: 15px;">Can teach you <img class="mt-3"
+                        style="border-radius: 50%; width: 30px;" src="./img/gb.svg" alt=""> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="text-center mt-4">
+              <button class="btn btn-primary">Start learning</button>
+            </div>
+          </div>
+      </section>
+
+
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
